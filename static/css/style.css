@@ -1,0 +1,159 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/*
+common
+******************  */
+header{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 2px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+header img{
+    width: 80px;
+}
+
+.content{
+    max-width: 600px;
+    margin: 0 auto;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+/* 
+Post 
+************
+*/
+
+form{
+    display: flex;
+   gap: 10px;
+   padding: 20px;
+}
+form div.img img, div.logo img{
+    width: 70px;
+    border-radius: 50%;
+}
+
+.post_form{
+    border-bottom: 1px solid #ccc ;
+    border-top: 1px solid #ccc;
+    
+}
+.post_form input{
+    width: calc(100% - 40px);
+    padding: 20px 20px;
+    margin: 10px 0;
+    background: #e6fef7;
+    border: 0;
+    border-radius: 15px;
+}
+.post_form textarea{
+    width: calc(100% - 40px);
+    padding: 10px 20px;
+    height: 100px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+div.post-img img{
+    width: 80%;
+    border-radius: 20px;
+}
+
+.Posts li{
+    display: flex;
+    gap:10px;
+    padding: 16px 17px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.Posts li .logo{
+   position: relative;
+    flex-basis: 15%
+}
+.Posts li .menu_icon{
+   width: 20px;
+   position: absolute;
+   right: 30px;
+   top: 18px;
+   z-index: 999;
+}
+.Posts li .menu{
+    display: none;
+    position:absolute;
+    top: 45px;
+    right: 15px;
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 10px 25px;
+    font-family: 13px
+}
+
+.Posts li.menu a{
+    text-decoration: none;
+}
+.Posts li .logo img{
+    width: 70px;
+}
+.Posts li .name_body{
+    flex-basis: 85%
+}
+
+.Posts li .name_body .name{
+    font-weight: bold;
+}
+.Posts li .name .datetime{
+    color:brown;
+}
+
+/* @media screen {
+    max-width: 500px;
+} */
+
+.Posts li .name_body{
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+
+
+
+div.file{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+div.file input{
+    background: white;
+    width: 100%;
+}
+
+div.file input.btn{
+    width: 200px;
+    background-color: rgb(29, 161, 242);
+    color: white;
+    padding: 12px;
+    font-size: 1.3rem;
+}
+
+div.menu a{
+    text-decoration: none;
+    color:rgb(29, 161, 242);
+}
+
+
+
+div.like img{
+    width: 30px;
+}
+
+div.like{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

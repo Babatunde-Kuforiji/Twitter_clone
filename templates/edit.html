@@ -1,0 +1,41 @@
+{% extends "base.html" %} {% block content %}{% load static %}
+
+<section class="content">
+    <section class="post_form">
+   
+        <header>
+           
+                <img src="https://techis-wd-twitter-clone.techisio.repl.co/static/img/logo-twitterblue.svg" alt="">
+
+           <h1>Edit</h1>
+        </header>
+       
+   
+       
+        <form method='POST' enctype="multipart/form-data">
+            <div class="img">
+                 <img src="https://techis-wd-twitter-clone.techisio.repl.co/static/img/sample-icon.jpg" alt="">
+            </div>
+           <div style="width:100%">
+            {% csrf_token %}
+            <input type="body" placeholder="Your name" required name="name" value="{{post.name}}" /> <br>
+            <textarea name="body" placeholder="What's happening ?" required>{{post.body}}</textarea>
+            <div class="post-img">
+                <img src="{{post.image.url}}" alt="">
+            </div>
+            <input class="file-input" type="file" name="image">  
+
+            <div class="file">
+                <input class="btn" type="submit" value="Update" />
+                <a href="/">
+                <input class="btn" type="button" value="Cancel" />
+           </a>
+         </div>
+          
+           </div>
+            
+        </form>
+    </section>
+
+    </section>
+     {% endblock %}
